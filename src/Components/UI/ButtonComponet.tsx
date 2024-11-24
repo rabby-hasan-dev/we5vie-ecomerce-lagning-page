@@ -5,8 +5,8 @@ import { ReactNode } from "react";
 const ButtonComponet = ({ children }: { children: ReactNode }) => {
     return (
         <div className="flex justify-start items-center">
-            <button className="bg-[#8F71E1] p-2 rounded-full " >{children}</button>
-            <button className="bg-[#8F71E1] p-2 rounded-full " >< ArrowUpRight03Icon />
+            <button className="bg-purple-500  hover:bg-purple-700 hover:text-white p-2 rounded-full " >{children}</button>
+            <button className="bg-purple-500  hover:bg-purple-700 hover:text-white p-2 rounded-full " >< ArrowUpRight03Icon color="#FFFFFF" />
             </button>
         </div>
     );

@@ -107,7 +107,7 @@ const Footer = () => {
             </div>
 
             <div className="py-4 bg-[#7E53D4] flex justify-center items-center">
-                <p className="text-white">© 2024 | We5ive</p>
+                <p className="text-white">© {new Date().getFullYear()} | We5ive</p>
             </div>
         </footer>
 

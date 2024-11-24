@@ -21,16 +21,16 @@ const Slider = ({ slides }: { slides: ReactNode[] }) => {
                 ))}
             </div>
             <button
-                className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-purple-600 text-white p-2 rounded-full"
+                className="absolute top-1/2 left-2 transform -translate-y-1/2 border border-purple-600 hover:bg-purple-600 text-white p-2 rounded-full"
                 onClick={prevSlide}
             >
-                <ArrowLeftIcon color="#FFFFFF" />
+                <ArrowLeftIcon className="text-purple-600 hover:text-white" />
             </button>
             <button
-                className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-purple-600 text-white p-2 rounded-full"
+                className="absolute top-1/2 right-2 transform -translate-y-1/2 border border-purple-600 hover:bg-purple-600 text-white p-2 rounded-full"
                 onClick={nextSlide}
             >
-                <ArrowRightIcon color="#FFFFFF" />
+                <ArrowRightIcon className="text-purple-600 hover:text-white" />
             </button>
             <div className="flex justify-center mt-2 space-x-2">
                 {slides.map((_, idx: number) => (

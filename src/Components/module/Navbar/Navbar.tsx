@@ -14,8 +14,8 @@ const Navbar = () => {
     // bg-[#F5F3FF]
 
     return (
-        <>
-            <header className="sticky top-0 z-50 max-w-screen-xl mx-auto">
+        <div className='bg-[#F5F3FF] sticky  top-0 z-50'>
+            <header className=" max-w-screen-xl mx-auto">
                 <div className="container mx-auto flex items-center justify-between px-6 py-3">
                     {/* Logo */}
                     <div className="flex items-center">
@@ -29,20 +29,20 @@ const Navbar = () => {
 
                     {/* Desktop Menu */}
                     <nav className="hidden lg:flex items-center space-x-8">
-                        <Link href="/" className="text-gray-800 font-semibold hover:text-blue-600">Home</Link>
-                        <Link href="/#shop" className="text-gray-800 font-semibold hover:text-blue-600">Shop</Link>
-                        <Link href="/#deals" className="text-gray-800 font-semibold hover:text-blue-600">Deals</Link>
-                        <Link href="/#new" className="text-gray-800 font-semibold hover:text-blue-600">What's New</Link>
+                        <Link href="/" className="text-[#646464] font-semibold hover:text-[#581FC1] ">Home</Link>
+                        <Link href="/#shop" className="text-[#646464] font-semibold hover:text-[#581FC1] ">Shop</Link>
+                        <Link href="/#deals" className="text-[#646464] font-semibold hover:text-[#581FC1] ">Deals</Link>
+                        <Link href="/#new" className="text-[#646464] font-semibold hover:text-[#581FC1] ">What's New</Link>
                     </nav>
 
                     {/* Right Section */}
                     <div className="flex items-center space-x-4">
-                        <div className="relative lg:flex items-center border rounded-full px-2 py-1">
-                            <SearchIcon />
+                        <div className="relative lg:flex items-center border rounded-full px-2 py-1 bg-white">
+                            <SearchIcon className='text-black' />
                             <input
                                 type="text"
                                 placeholder="Search..."
-                                className="hidden lg:block ml-2 outline-none bg-transparent text-sm text-gray-600"
+                                className="hidden lg:block ml-2 outline-none bg-transparent text-sm text-black"
                             />
                         </div>
                         <ShoppingIcon />
@@ -93,7 +93,7 @@ const Navbar = () => {
 
             </header>
 
-        </>
+        </div>
     );
 };
 

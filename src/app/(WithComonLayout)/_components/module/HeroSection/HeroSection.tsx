@@ -26,13 +26,19 @@ const HeroSection = () => {
                 </div>
             </Container>
             {/* Feature Section */}
-            <div className="absolute bottom-0 left-0 w-full bg-[#6441C2]/50 rounded-t-lg ">
-                <div className='max-w-screen-xl text-white mx-auto md:flex justify-between items-center gap-8 py-6 px-4 '>
+
+
+            <div className="absolute bottom-0 left-0 w-full bg-[url('/option.png')] bg-no-repeat bg-cover rounded-t-lg">
+                {/* Overlay for better text visibility */}
+                <div className="absolute inset-0 bg-[#6441C2]/90 z-10" />
+
+                {/* Content Section */}
+                <div className="relative z-20 max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 py-6 px-4 text-white">
                     {/* Free Shipping Feature */}
                     <div className="flex items-center gap-4">
                         <TruckDeliveryIcon color="#fff" />
                         <div className="space-y-1">
-                            <h3 className="uppercase font-semibold">Free Shipping</h3>
+                            <h3 className="uppercase font-semibold text-lg">Free Shipping</h3>
                             <p className="text-sm">Buy BDT 3000+ & Get Free Delivery</p>
                         </div>
                     </div>
@@ -41,7 +47,7 @@ const HeroSection = () => {
                     <div className="flex items-center gap-4">
                         <ExchangeIcon color="#fff" />
                         <div className="space-y-1">
-                            <h3 className="uppercase font-semibold">7 Days Exchange</h3>
+                            <h3 className="uppercase font-semibold text-lg">7 Days Exchange</h3>
                             <p className="text-sm">Exchange within 7 days with similar products</p>
                         </div>
                     </div>
@@ -50,13 +56,17 @@ const HeroSection = () => {
                     <div className="flex items-center gap-4">
                         <PaymentIcon color="#fff" />
                         <div className="space-y-1">
-                            <h3 className="uppercase font-semibold">100% Payment Secure</h3>
+                            <h3 className="uppercase font-semibold text-lg">100% Payment Secure</h3>
                             <p className="text-sm">Cash on delivery and secured online payment</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
+
+
     );
 };
 
