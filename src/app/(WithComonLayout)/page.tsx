@@ -1,8 +1,16 @@
 
+import CollectionSlide from "./_components/module/Collection/CollectionSlide";
+import Discount from "./_components/module/Discount/Discount";
+
+
 export default function Home() {
   return (
-    <div >
-      <h2>Home Page</h2>
+    <div className="space-y-[75px] " >
+      <Discount />
+      <CollectionSlide />
+      <Discount />
+
+
     </div>
   );
 }

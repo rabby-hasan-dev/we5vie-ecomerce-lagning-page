@@ -1,0 +1,20 @@
+[
+    {
+      "image": "/man.png",
+      "title": "Off for New Customers",
+      "description": "Big Deal",
+      "buttonText": "Claim Offer"
+    },
+    {
+      "image": "/woman.png",
+      "title": "Off Summer Sale",
+      "description": "Limited Time Offer",
+      "buttonText": "Shop Now"
+    },
+    {
+      "image": "/kid.png",
+      "title": "Buy One Get One Free",
+      "description": "Special Offer",
+      "buttonText": "Explore Now"
+    }
+  ]
