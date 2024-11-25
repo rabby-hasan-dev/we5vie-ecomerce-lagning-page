@@ -13,6 +13,30 @@ const ProductInfoSection = () => {
         setActiveTab(tab);
     };
 
+
+    const sampleProduct = {
+        name: "Gaming Laptop Pro",
+        price: 1499.99,
+        category: "Electronics",
+        stock: 8,
+        brand: "TechBrand",
+        sku: "GAM-LTP-123",
+        description: "A high-performance gaming laptop with stunning visuals and advanced cooling.",
+        specifications: [
+            "16GB RAM",
+            "1TB SSD",
+            "NVIDIA RTX 3070",
+            "17-inch 4K Display",
+            "Intel i7 12th Gen Processor",
+        ],
+    };
+
+
+
+
+
+
+
     return (
         <div>
             {/* Dynamic Content Section */}
@@ -40,7 +64,7 @@ const ProductInfoSection = () => {
 
                 <div className="mt-10">
                     {/* Conditional Rendering based on active tab */}
-                    {activeTab === "details" && <ProductDetailsComponent />}
+                    {activeTab === "details" && <ProductDetailsComponent product={sampleProduct} />}
                     {activeTab === "rating" && <ProductRatingComponent />}
                     {activeTab === "discussion" && <ProductDiscussion />}
                 </div>
