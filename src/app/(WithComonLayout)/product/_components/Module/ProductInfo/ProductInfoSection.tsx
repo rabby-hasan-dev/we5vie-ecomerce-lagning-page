@@ -9,7 +9,7 @@ const ProductInfoSection = () => {
     const [activeTab, setActiveTab] = useState("details"); // Default to 'details'
 
     // Function to change active tab
-    const handleTabClick = (tab) => {
+    const handleTabClick = (tab: string) => {
         setActiveTab(tab);
     };
 

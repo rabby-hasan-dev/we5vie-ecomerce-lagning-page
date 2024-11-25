@@ -10,26 +10,36 @@ type SlideContentProps = {
 }
 
 
-const SlideContent = ({ imageSrc, title, description, buttonText }: SlideContentProps) => (
-    <div className="lg:flex items-center gap-10">
-        <div className="bg-[#EEECFB]">
-            <Image
-                src={imageSrc}
-                width={427}
-                height={459}
-                alt="Discount-man"
-                className="object-cover"
-            />
+const SlideContent = ({ imageSrc, title, buttonText }: SlideContentProps) => (
+
+    <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-10 p-4 lg:p-8">
+        {/* Image Section */}
+        <div className=" relative w-full lg:w-1/2">
+            {/* Background */}
+            <div className="absolute inset-x-0 bottom-0 h-[80%] bg-[#EEECFB] z-0" />
+            {/* Image placed above background */}
+            <div className="relative z-10">
+                <Image
+                    src={imageSrc}
+                    alt="Slider-content"
+                    layout="responsive"
+                    width={800}
+                    height={600}
+                    className="object-cover rounded-lg"
+                    priority
+                />
+            </div>
         </div>
-        <div>
-            <p className="text-[#6F42C1] text-2xl mb-2">{description}</p>
-            <h2 className="font-semibold text-5xl">
-                <span className="text-[#6F42C1]">30% </span>
+
+        {/* Content Section */}
+        <div className="w-full lg:w-1/2 ">
+            <h2 className="font-semibold text-3xl lg:text-5xl mb-4">
                 {title}
             </h2>
-            <ButtonComponet>{buttonText} </ButtonComponet>
+            <ButtonComponet>{buttonText}</ButtonComponet>
         </div>
     </div>
+
 
 );
 
