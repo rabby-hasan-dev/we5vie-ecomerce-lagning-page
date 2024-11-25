@@ -1,3 +1,5 @@
+
+
 import Container from "@/Components/UI/Container";
 import ProductSlider from "../_components/Module/ProductSlider/ProductSlider";
 import ProductOverviewCard from "../_components/UI/ProductOverviewCard";
@@ -6,9 +8,14 @@ import FeaturedProductCard from "@/Components/UI/FeaturedProductCard";
 import SlideButton from "@/Components/Button/SlideButton";
 import Breadcrumb from "../_components/UI/Breadcrumb";
 import Badges from "@/Components/UI/Badges";
+import ProductInfoSection from "../_components/Module/ProductInfo/ProductInfoSection";
+
 
 
 const ProductDetailsPage = () => {
+
+
+
     return (
         <Container>
             <div className=" hidden lg:block absolute top-96 right-1 ">
@@ -30,6 +37,10 @@ const ProductDetailsPage = () => {
 
                     </div>
 
+                </main>
+
+                <main>
+                    < ProductInfoSection />
                 </main>
                 <main className="my-20">
                     {/* Related Product */}
