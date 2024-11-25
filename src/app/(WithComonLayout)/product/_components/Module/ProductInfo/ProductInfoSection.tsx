@@ -32,8 +32,20 @@ const ProductInfoSection = () => {
     };
 
 
-
-
+    const discussionDataSample = [
+        {
+            username: "Alice",
+            question: "Does this product come with a warranty?",
+            answer: "Yes, it includes a 1-year warranty.",
+            date: "2024-11-22",
+        },
+        {
+            username: "Bob",
+            question: "What is the size of this product?",
+            answer: null, // No answer yet
+            date: "2024-11-23",
+        },
+    ];
 
 
 
@@ -66,7 +78,7 @@ const ProductInfoSection = () => {
                     {/* Conditional Rendering based on active tab */}
                     {activeTab === "details" && <ProductDetailsComponent product={sampleProduct} />}
                     {activeTab === "rating" && <ProductRatingComponent />}
-                    {activeTab === "discussion" && <ProductDiscussion />}
+                    {activeTab === "discussion" && <ProductDiscussion discussions={discussionDataSample} />}
                 </div>
             </div>
         </div>

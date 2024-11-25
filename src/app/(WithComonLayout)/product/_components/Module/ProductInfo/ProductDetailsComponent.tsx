@@ -19,7 +19,7 @@ const ProductDetailsComponent = ({ product }) => {
                 <p className="text-sm  mt-1">SKU: {sku}</p>
                 <p className="text-lg font-semibold text-gray-900 mt-4">${price}</p>
             </div>
-
+            <hr className='my-6' />
             {/* Specifications Section */}
             <div>
                 <h2 className="text-lg font-medium text-black">Specifications</h2>
@@ -29,7 +29,7 @@ const ProductDetailsComponent = ({ product }) => {
                     ))}
                 </ul>
             </div>
-
+            <hr className='my-6' />
             {/* Description Section */}
             <div>
                 <h2 className="text-lg font-medium text-black">Description</h2>
