@@ -1,7 +1,7 @@
 import Container from "@/Components/UI/Container";
 import Image from "next/image";
 import DManImage from '@/assets/Add/two-man.png'
-import ButtonComponet from "@/Components/UI/ButtonComponet";
+import ButtonComponet from "@/Components/Button/ButtonComponet";
 
 
 

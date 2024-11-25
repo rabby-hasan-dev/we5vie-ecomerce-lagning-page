@@ -1,4 +1,5 @@
-import { ArrowLeftIcon, ArrowRightIcon } from "@/assets/icons";
+
+import SlideButton from "@/Components/Button/SlideButton";
 import Container from "@/Components/UI/Container";
 import FeaturedProductCard from "@/Components/UI/FeaturedProductCard";
 import HeadingComponent from "@/Components/UI/HeadingComponent";
@@ -9,20 +10,7 @@ const FeaturedProject = () => {
             {/* header part */}
             <div className="flex justify-between items-center">
                 <HeadingComponent heading="New Arrivals" subHeading="featured product" />
-                <div className="space-x-2">
-                    <button
-                        className="transform -translate-y-1/2 border border-purple-600 hover:bg-purple-600 text-white p-2 rounded-full"
-
-                    >
-                        <ArrowLeftIcon className="text-purple-600 hover:text-white" />
-                    </button>
-                    <button
-                        className=" transform -translate-y-1/2 border border-purple-600 hover:bg-purple-600 text-white p-2 rounded-full"
-
-                    >
-                        <ArrowRightIcon className="text-purple-600 hover:text-white" />
-                    </button>
-                </div>
+                <SlideButton />
             </div>
 
             {/* main content */}

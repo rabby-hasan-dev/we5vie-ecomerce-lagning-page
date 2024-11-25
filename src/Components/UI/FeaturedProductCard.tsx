@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const FeaturedProductCard = () => {
     return (
-        <div className="shadow-md hover:shadow-lg transition-shadow w-full max-w-sm overflow-hidden mx-auto m-2  border border-gray-200">
+        <div className="shadow-md hover:shadow-lg rounded-lg transition-shadow w-full max-w-sm overflow-hidden mx-auto m-2  border border-gray-200">
             {/* Image Section */}
             <div className="relative ">
                 <Image
@@ -12,7 +12,7 @@ const FeaturedProductCard = () => {
                     layout="responsive"
                     width={1920}
                     height={1080}
-                    className="object-cover m-2"
+                    className="object-cover m-2 bg-purple-50"
                 />
             </div>
 

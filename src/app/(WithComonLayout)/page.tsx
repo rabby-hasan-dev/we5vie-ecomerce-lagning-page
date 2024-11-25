@@ -6,14 +6,17 @@ import FeaturedProject from "./_components/module/FeaturedProject/FeaturedProjec
 import BigdealSection from "./_components/module/BigdealSection/BigdealSection";
 
 
+
 export default function Home() {
   return (
-    <div className="space-y-[75px] " >
+    <div className="space-y-[75px] bg-[#FFFFFF] " >
+
       <HeroSection />
       <FeaturedProject />
       <Discount />
       <CollectionSlide />
       <BigdealSection />
+
 
     </div>
   );

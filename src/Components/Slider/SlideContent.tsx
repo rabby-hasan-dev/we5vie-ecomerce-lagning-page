@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import ButtonComponet from "../UI/ButtonComponet";
+import ButtonComponet from "../Button/ButtonComponet";
 
 type SlideContentProps = {
     imageSrc: string,

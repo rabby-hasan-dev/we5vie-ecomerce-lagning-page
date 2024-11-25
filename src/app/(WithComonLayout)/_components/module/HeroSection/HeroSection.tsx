@@ -1,6 +1,6 @@
 
 import Container from '@/Components/UI/Container';
-import ButtonComponet from '@/Components/UI/ButtonComponet';
+import ButtonComponet from '@/Components/Button/ButtonComponet';
 import { ExchangeIcon, PaymentIcon, TruckDeliveryIcon } from '@/assets/icons';
 
 

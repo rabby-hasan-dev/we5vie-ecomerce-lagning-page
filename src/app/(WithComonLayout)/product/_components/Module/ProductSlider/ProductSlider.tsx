@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Container from "@/Components/UI/Container";
 import Slider from "@/Components/Slider/Slider";
-import SlideContent from "@/Components/Slider/SlideContent";
+import Image from "next/image";
 
 export interface ISlide {
     image: string;
@@ -30,14 +30,17 @@ const ProductSlider = () => {
         <Container>
             <Slider
                 slides={slidesData.map((slide: ISlide, index) => (
-                    <SlideContent
-                        key={index}
-                        imageSrc={slide.image}
-                        title={slide.title}
-                        description={slide.description}
-                        buttonText={slide.buttonText}
+                    <Image
+                        key={index + 1}
+                        src={slide.image}
+                        alt="footer-image"
+                        width={1200}
+                        height={800}
+                        layout="responsive"
+                        className="object-cover h-[50vh] bg-purple-50 rounded-lg"
                     />
                 ))}
+
             />
         </Container>
     );

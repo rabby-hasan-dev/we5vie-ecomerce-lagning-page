@@ -2,8 +2,9 @@
 'use client'
 import { useEffect, useState } from "react";
 import Container from "@/Components/UI/Container";
-import Slider from "@/Components/Slider/Slider";
 import SlideContent from "@/Components/Slider/SlideContent";
+import AnimateSlider from "@/Components/Slider/AnimateSlider";
+
 
 export interface ISlide {
     image: string;
@@ -29,7 +30,7 @@ const CollectionSlide = () => {
 
     return (
         <Container>
-            <Slider
+            <AnimateSlider
                 slides={slidesData.map((slide: ISlide, index) => (
                     <SlideContent
                         key={index}

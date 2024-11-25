@@ -1,9 +1,10 @@
 import Image from 'next/image';
+import Rating from './Rating';
 
 
 const ProductCard = () => {
     return (
-        <div className="shadow-md hover:shadow-lg transition-shadow w-full max-w-sm overflow-hidden mx-auto m-2  border border-gray-200">
+        <div className="shadow-md hover:shadow-lg rounded-lg transition-shadow w-full max-w-sm overflow-hidden mx-auto m-2  border border-gray-200">
             {/* Image Section */}
             <div className="relative ">
                 <Image
@@ -12,7 +13,7 @@ const ProductCard = () => {
                     layout="responsive"
                     width={1920}
                     height={1080}
-                    className="object-cover m-2"
+                    className="object-cover m-2 bg-purple-50"
                 />
                 {/* Discount Badge */}
 
@@ -24,7 +25,7 @@ const ProductCard = () => {
             {/* Content Section */}
             <div className="p-2">
                 {/* Rating */}
-                <p className="text-sm mb-2">⭐⭐⭐⭐⭐(10)</p>
+                <div className="text-sm mb-2 flex justify-start items-center"><Rating /> (10)</div>
 
                 {/* Product Info */}
                 <div className="flex justify-between items-center mb-3">
