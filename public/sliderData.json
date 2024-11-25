@@ -3,7 +3,7 @@
       "image": "/man.png",
       "title": "Off for New Customers",
       "description": "Big Deal",
-      "buttonText": "Claim Offer"
+      "buttonText": "Shop Now"
     },
     {
       "image": "/woman.png",
@@ -15,6 +15,6 @@
       "image": "/kid.png",
       "title": "Buy One Get One Free",
       "description": "Special Offer",
-      "buttonText": "Explore Now"
+      "buttonText": "Shop Now"
     }
   ]

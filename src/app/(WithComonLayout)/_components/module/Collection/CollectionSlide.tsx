@@ -29,6 +29,7 @@ const CollectionSlide = () => {
     }, []);
 
     return (
+
         <Container>
             <AnimateSlider
                 slides={slidesData.map((slide: ISlide, index) => (
@@ -41,7 +42,10 @@ const CollectionSlide = () => {
                     />
                 ))}
             />
+
+
         </Container>
+
     );
 };
 

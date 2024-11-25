@@ -6,7 +6,7 @@ import ProductDiscussion from "./ProductDiscussion";
 
 
 const ProductInfoSection = () => {
-    const [activeTab, setActiveTab] = useState("details"); // Default to 'details'
+    const [activeTab, setActiveTab] = useState("rating"); // Default to 'details'
 
     // Function to change active tab
     const handleTabClick = (tab: string) => {

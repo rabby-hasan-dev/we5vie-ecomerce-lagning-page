@@ -18,14 +18,14 @@ const SlideContent = ({ imageSrc, title, buttonText }: SlideContentProps) => (
             {/* Background */}
             <div className="absolute inset-x-0 bottom-0 h-[80%] bg-[#EEECFB] z-0" />
             {/* Image placed above background */}
-            <div className="relative z-10">
+            <div className="relative z-10 w-[328px] h-[358px] lg:w-[468px] lg:h-[566px] overflow-hidden">
                 <Image
                     src={imageSrc}
                     alt="Slider-content"
-                    layout="responsive"
-                    width={800}
-                    height={600}
-                    className="object-cover rounded-lg"
+                    layout="fixed"  // This ensures fixed dimensions
+                    width={468}     // Fixed width for all images
+                    height={566}    // Fixed height for all images
+                    objectFit="cover"  // Maintain aspect ratio while filling the container
                     priority
                 />
             </div>

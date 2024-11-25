@@ -45,8 +45,15 @@ const Navbar = () => {
                                 className="hidden lg:block ml-2 outline-none bg-transparent text-sm text-black"
                             />
                         </div>
-                        <ShoppingIcon />
-                        <UserIcon />
+                        <div className='relative'>
+                            <ShoppingIcon />
+
+                            <span
+                                className="bg-[#1E1E1E] text-[12px] p-1  min-w-[16px] font-sans  h-4 flex items-center justify-center text-white rounded-full absolute -top-2 left-[60%]">0</span>
+                        </div>
+                        <div>
+                            <UserIcon />
+                        </div>
                     </div>
                 </div>
 

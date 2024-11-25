@@ -14,7 +14,7 @@ const AnimateSlider = ({ slides }: { slides: ReactNode[] }) => {
     }, [slides.length]); // Re-run the effect if the number of slides changes
 
     return (
-        <div className="relative w-full max-w-screen-xl mx-auto overflow-hidden">
+        <div className="relative w-full  max-w-screen-xl mx-auto overflow-hidden">
             <div
                 className="flex transition-transform duration-500"
                 style={{ transform: `translateX(-${current * 100}%)` }}
