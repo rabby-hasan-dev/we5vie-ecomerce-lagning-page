@@ -17,22 +17,22 @@ const ProductInfoSection = () => {
         <div>
             {/* Dynamic Content Section */}
             <div className="my-[50px] ">
-                <div className="flex space-x-[72px] ">
+                <div className="flex lg:space-x-[72px] ">
                     <button
                         onClick={() => handleTabClick("details")}
-                        className={`py-2 px-6 font-semibold text-xl ${activeTab === "details" ? "text-[#7E53D4] " : "text-[#747474] "} `}
+                        className={`py-2 px-6 font-semibold lg:text-[19px] ${activeTab === "details" ? "text-[#7E53D4] " : "text-[#747474] "} `}
                     >
                         Details
                     </button>
                     <button
                         onClick={() => handleTabClick("rating")}
-                        className={`py-2 px-6 font-semibold text-xl ${activeTab === "rating" ? "text-[#7E53D4] " : "text-[#747474] "} `}
+                        className={`py-2 px-6 font-semibold lg:text-[19px] ${activeTab === "rating" ? "text-[#7E53D4] " : "text-[#747474] "} `}
                     >
                         Review & Rating
                     </button>
                     <button
                         onClick={() => handleTabClick("discussion")}
-                        className={`py-2 px-6 font-semibold text-xl ${activeTab === "discussion" ? "text-[#7E53D4] " : "text-[#747474] "} `}
+                        className={`py-2 px-6 font-semibold lg:text-[19px] ${activeTab === "discussion" ? "text-[#7E53D4] " : "text-[#747474] "} `}
                     >
                         Discussion
                     </button>

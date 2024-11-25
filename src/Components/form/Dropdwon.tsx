@@ -29,13 +29,13 @@ const Dropdown = ({ buttonLabel = "Select Option", options = [] }: TDropdwonProp
 
             {/* Dropdown Menu */}
             {isOpen && (
-                <div className="absolute left-0 mt-2 w-48  border-2 hover:text-white border-purple-600 rounded-md shadow-lg">
+                <div className="absolute left-0 mt-2 w-48   border-2 hover:text-white border-purple-600 rounded-md shadow-lg">
                     <ul className="py-1">
                         {options.map((option, index) => (
                             <li key={index}>
                                 <Link
                                     href="#"
-                                    className="block px-4 py-2 text-black hover:text-white hover:bg-purple-600 "
+                                    className="block px-4 py-2 bg-gray-200 text-black hover:text-white hover:bg-purple-600 "
                                 >
                                     {option}
                                 </Link>
