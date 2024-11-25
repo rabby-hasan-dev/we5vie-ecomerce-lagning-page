@@ -1,9 +1,7 @@
 
-'use client'
-import { useEffect, useState } from "react";
 import Container from "@/Components/UI/Container";
-import Slider from "@/Components/Slider/Slider";
-import Image from "next/image";
+
+import ImageGallerySlider from "@/Components/Slider/ImageGallerySlider";
 
 export interface ISlide {
     image: string;
@@ -13,35 +11,19 @@ export interface ISlide {
 }
 
 const ProductSlider = () => {
-    const [slidesData, setSlidesData] = useState([]);
 
-    // Fetch data on component mount
-    useEffect(() => {
-        const fetchData = async () => {
-            const response = await fetch("/sliderData.json");
-            const data = await response.json();
-            setSlidesData(data);
-        };
-
-        fetchData();
-    }, []);
+    const slides = [
+        "/heroman.png",
+        "/heroman.png",
+        "/heroman.png",
+        "/man.png",
+    ];
 
     return (
         <Container>
-            <Slider
-                slides={slidesData.map((slide: ISlide, index) => (
-                    <Image
-                        key={index + 1}
-                        src={slide.image}
-                        alt="footer-image"
-                        width={1200}
-                        height={800}
-                        layout="responsive"
-                        className="object-cover h-[50vh] bg-purple-50 rounded-lg"
-                    />
-                ))}
-
-            />
+            <div className="container mx-auto">
+                <ImageGallerySlider slides={slides} />
+            </div>
         </Container>
     );
 };

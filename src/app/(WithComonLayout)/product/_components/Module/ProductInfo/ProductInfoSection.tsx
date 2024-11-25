@@ -20,14 +20,17 @@ const ProductInfoSection = () => {
         category: "Electronics",
         stock: 8,
         brand: "TechBrand",
-        sku: "GAM-LTP-123",
         description: "A high-performance gaming laptop with stunning visuals and advanced cooling.",
         specifications: [
-            "16GB RAM",
-            "1TB SSD",
-            "NVIDIA RTX 3070",
-            "17-inch 4K Display",
-            "Intel i7 12th Gen Processor",
+            {
+                material: "Silk"
+            },
+            {
+                length: "6 meters"
+            },
+            {
+                washCare: "Dry clean only"
+            }
         ],
     };
 

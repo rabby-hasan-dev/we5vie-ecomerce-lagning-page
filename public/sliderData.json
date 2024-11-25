@@ -1,19 +1,19 @@
 [
     {
       "image": "/man.png",
-      "title": "Off for New Customers",
+      "title": "men collection",
       "description": "Big Deal",
       "buttonText": "Shop Now"
     },
     {
       "image": "/woman.png",
-      "title": "Off Summer Sale",
+      "title": "women collection",
       "description": "Limited Time Offer",
       "buttonText": "Shop Now"
     },
     {
       "image": "/kid.png",
-      "title": "Buy One Get One Free",
+      "title": "kid collection",
       "description": "Special Offer",
       "buttonText": "Shop Now"
     }

@@ -8,12 +8,12 @@ import { ExchangeIcon, PaymentIcon, TruckDeliveryIcon } from '@/assets/icons';
 
 const HeroSection = () => {
     return (
-        <div className="relative bg-[url('/hero.png')] bg-no-repeat bg-cover flex justify-center items-center h-[70vh] mb-5">
+        <div className="relative bg-[url('/hero.png')] lg:bg-no-repeat lg:bg-cover flex justify-center items-center h-[600px] mb-5">
             <div className="absolute inset-0 bg-black/30 z-10" /> {/* Semi-transparent overlay */}
 
             <Container>
                 {/* Hero Content */}
-                <div className="relative z-20 text-white text-center p-5 space-y-5">
+                <div className="relative z-20 text-white text-center px-4  lg:p-5 space-y-5">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
                         Elevate Your Everyday Style
                     </h2>
@@ -27,13 +27,12 @@ const HeroSection = () => {
             </Container>
             {/* Feature Section */}
 
-
             <div className="absolute bottom-0 left-0 w-full bg-[url('/option.png')] bg-no-repeat bg-cover rounded-t-lg">
                 {/* Overlay for better text visibility */}
                 <div className="absolute inset-0 bg-[#6441C2]/90 z-10" />
 
                 {/* Content Section */}
-                <div className="relative z-20 max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 py-6 px-4 text-white">
+                <div className="relative z-20 max-w-screen-xl mx-auto flex flex-col md:flex-row justify-start lg:justify-between items-center gap-8 py-6 lg:px-4 text-white">
                     {/* Free Shipping Feature */}
                     <div className="flex items-center gap-4">
                         <TruckDeliveryIcon color="#fff" />

@@ -1,193 +1,345 @@
 [
-    {
-      "id": 1,
-      "name": "Indian Sharee",
-      "brand": "Ethnic Elegance",
-      "price": 2300,
-      "image": "/shari.png",
-      "rating": 4.5,
-      "reviews": 10,
-      "discount": "40%",
-      "category": "Clothing",
-      "description": "A beautifully crafted Indian Sharee made from high-quality silk for special occasions.",
-      "specifications": {
-        "material": "Silk",
-        "length": "6 meters",
-        "washCare": "Dry clean only"
+  {
+    "id": 1,
+    "name": "Indian Sharee",
+    "brand": "Ethnic Elegance",
+    "price": 2300,
+    "image": "/shari.png",
+    "rating": 4.5,
+    "reviews": 10,
+    "discount": "40%",
+    "category": "Clothing",
+    "stock": 10,
+    "description": "A beautifully crafted Indian Sharee made from high-quality silk for special occasions.",
+    "specifications": [
+      {
+        "material": "Silk"
       },
-      "availableSizes": ["Free Size"],
-      "availableColors": ["Red", "Green", "Blue"]
-    },
-    {
-      "id": 2,
-      "name": "Silk Sharee",
-      "brand": "Royal Attire",
-      "price": 3500,
-      "image": "/shari.png",
-      "rating": 4.8,
-      "reviews": 25,
-      "discount": "30%",
-      "category": "Clothing",
-      "description": "Elegant silk sharee with intricate embroidery, perfect for festive events.",
-      "specifications": {
-        "material": "Silk Blend",
-        "length": "6.5 meters",
+      {
+        "length": "6 meters"
+      },
+      {
+        "washCare": "Dry clean only"
+      }
+    ],
+    "availableSizes": [
+      "Free Size"
+    ],
+    "availableColors": [
+      "Red",
+      "Green",
+      "Blue"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Silk Sharee",
+    "brand": "Royal Attire",
+    "price": 3500,
+    "image": "/shari.png",
+    "rating": 4.8,
+    "reviews": 25,
+    "discount": "30%",
+    "category": "Clothing",
+    "stock": 10,
+    "description": "Elegant silk sharee with intricate embroidery, perfect for festive events.",
+    "specifications": [
+      {
+        "material": "Silk Blend"
+      },
+      {
+        "length": "6.5 meters"
+      },
+      {
         "washCare": "Hand wash recommended"
+      }
+    ],
+    "availableSizes": [
+      "Free Size"
+    ],
+    "availableColors": [
+      "Purple",
+      "Gold",
+      "Maroon"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Designer Lehenga",
+    "brand": "Wedding Couture",
+    "price": 5500,
+    "image": "/kurti.png",
+    "rating": 4.7,
+    "reviews": 18,
+    "discount": "25%",
+    "category": "Clothing",
+    "stock": 10,
+    "description": "Exclusive designer lehenga with heavy embroidery for weddings and parties.",
+    "specifications": [
+      {
+        "material": "Net"
       },
-      "availableSizes": ["Free Size"],
-      "availableColors": ["Purple", "Gold", "Maroon"]
-    },
-    {
-      "id": 3,
-      "name": "Designer Lehenga",
-      "brand": "Wedding Couture",
-      "price": 5500,
-      "image": "/kurti.png",
-      "rating": 4.7,
-      "reviews": 18,
-      "discount": "25%",
-      "category": "Clothing",
-      "description": "Exclusive designer lehenga with heavy embroidery for weddings and parties.",
-      "specifications": {
-        "material": "Net",
-        "length": "Customizable",
+      {
+        "length": "Customizable"
+      },
+      {
         "washCare": "Dry clean only"
+      }
+    ],
+    "availableSizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "availableColors": [
+      "Pink",
+      "Peach",
+      "Beige"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Cotton Kurta",
+    "brand": "Casual Comfort",
+    "price": 1200,
+    "image": "/kurti.png",
+    "rating": 4.4,
+    "reviews": 15,
+    "discount": "20%",
+    "category": "Clothing",
+    "stock": 10,
+    "description": "Comfortable cotton kurta for casual and semi-formal occasions.",
+    "specifications": [
+      {
+        "material": "Cotton"
       },
-      "availableSizes": ["S", "M", "L", "XL"],
-      "availableColors": ["Pink", "Peach", "Beige"]
-    },
-    {
-      "id": 4,
-      "name": "Cotton Kurta",
-      "brand": "Casual Comfort",
-      "price": 1200,
-      "image": "/kurti.png",
-      "rating": 4.4,
-      "reviews": 15,
-      "discount": "20%",
-      "category": "Clothing",
-      "description": "Comfortable cotton kurta for casual and semi-formal occasions.",
-      "specifications": {
-        "material": "Cotton",
-        "sleeves": "Full Sleeves",
+      {
+        "sleeves": "Full Sleeves"
+      },
+      {
         "washCare": "Machine wash"
+      }
+    ],
+    "availableSizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "White",
+      "Black",
+      "Navy Blue"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Men's Blazer",
+    "brand": "Sharp Look",
+    "price": 4500,
+    "image": "/man.png",
+    "rating": 4.6,
+    "reviews": 22,
+    "discount": "35%",
+    "category": "Men's Wear",
+    "stock": 10,
+    "description": "Stylish men's blazer perfect for formal occasions and business meetings.",
+    "specifications": [
+      {
+        "material": "Polyester Blend"
       },
-      "availableSizes": ["M", "L", "XL", "XXL"],
-      "availableColors": ["White", "Black", "Navy Blue"]
-    },
-    {
-      "id": 5,
-      "name": "Men's Blazer",
-      "brand": "Sharp Look",
-      "price": 4500,
-      "image": "/man.png",
-      "rating": 4.6,
-      "reviews": 22,
-      "discount": "35%",
-      "category": "Men's Wear",
-      "description": "Stylish men's blazer perfect for formal occasions and business meetings.",
-      "specifications": {
-        "material": "Polyester Blend",
-        "fit": "Slim Fit",
+      {
+        "fit": "Slim Fit"
+      },
+      {
         "washCare": "Dry clean only"
+      }
+    ],
+    "availableSizes": [
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "availableColors": [
+      "Black",
+      "Gray",
+      "Navy"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Kids' Frock",
+    "brand": "Tiny Trends",
+    "price": 1800,
+    "image": "/kid.png",
+    "rating": 4.3,
+    "reviews": 12,
+    "discount": "15%",
+    "category": "Kids' Wear",
+    "stock": 10,
+    "description": "Adorable frock for kids, suitable for both casual and festive wear.",
+    "specifications": [
+      {
+        "material": "Cotton"
       },
-      "availableSizes": ["38", "40", "42", "44"],
-      "availableColors": ["Black", "Gray", "Navy"]
-    },
-    {
-      "id": 6,
-      "name": "Kids' Frock",
-      "brand": "Tiny Trends",
-      "price": 1800,
-      "image": "/kid.png",
-      "rating": 4.3,
-      "reviews": 12,
-      "discount": "15%",
-      "category": "Kids' Wear",
-      "description": "Adorable frock for kids, suitable for both casual and festive wear.",
-      "specifications": {
-        "material": "Cotton",
-        "length": "Knee-Length",
+      {
+        "length": "Knee-Length"
+      },
+      {
         "washCare": "Machine wash"
+      }
+    ],
+    "availableSizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "availableColors": [
+      "Pink",
+      "Yellow",
+      "Mint Green"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Casual T-Shirt",
+    "brand": "Urban Basics",
+    "price": 800,
+    "image": "/shart1.png",
+    "rating": 4.2,
+    "reviews": 8,
+    "discount": "10%",
+    "category": "Clothing",
+    "stock": 10,
+    "description": "Breathable and comfortable casual t-shirt for everyday use.",
+    "specifications": [
+      {
+        "material": "Cotton"
       },
-      "availableSizes": ["XS", "S", "M", "L"],
-      "availableColors": ["Pink", "Yellow", "Mint Green"]
-    },
-    {
-      "id": 7,
-      "name": "Casual T-Shirt",
-      "brand": "Urban Basics",
-      "price": 800,
-      "image": "/shart1.png",
-      "rating": 4.2,
-      "reviews": 8,
-      "discount": "10%",
-      "category": "Clothing",
-      "description": "Breathable and comfortable casual t-shirt for everyday use.",
-      "specifications": {
-        "material": "Cotton",
-        "sleeves": "Short Sleeves",
+      {
+        "sleeves": "Short Sleeves"
+      },
+      {
         "washCare": "Machine wash"
+      }
+    ],
+    "availableSizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "availableColors": [
+      "White",
+      "Black",
+      "Gray"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Formal Shirt",
+    "brand": "Professional Line",
+    "price": 1500,
+    "image": "/shirt.png",
+    "rating": 4.6,
+    "reviews": 20,
+    "discount": "25%",
+    "category": "Men's Wear",
+    "stock": 10,
+    "description": "Classic formal shirt, a wardrobe essential for office and events.",
+    "specifications": [
+      {
+        "material": "Cotton Blend"
       },
-      "availableSizes": ["S", "M", "L", "XL"],
-      "availableColors": ["White", "Black", "Gray"]
-    },
-    {
-      "id": 8,
-      "name": "Formal Shirt",
-      "brand": "Professional Line",
-      "price": 1500,
-      "image": "/shirt.png",
-      "rating": 4.6,
-      "reviews": 20,
-      "discount": "25%",
-      "category": "Men's Wear",
-      "description": "Classic formal shirt, a wardrobe essential for office and events.",
-      "specifications": {
-        "material": "Cotton Blend",
-        "sleeves": "Full Sleeves",
+      {
+        "sleeves": "Full Sleeves"
+      },
+      {
         "washCare": "Machine wash"
+      }
+    ],
+    "availableSizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Light Blue",
+      "White",
+      "Charcoal"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Western Dress",
+    "brand": "Modern Chic",
+    "price": 3200,
+    "image": "/dress.png",
+    "rating": 4.8,
+    "reviews": 30,
+    "discount": "30%",
+    "category": "Women's Wear",
+    "stock": 10,
+    "description": "Chic western dress with modern design and comfortable fit.",
+    "specifications": [
+      {
+        "material": "Polyester"
       },
-      "availableSizes": ["M", "L", "XL", "XXL"],
-      "availableColors": ["Light Blue", "White", "Charcoal"]
-    },
-    {
-      "id": 9,
-      "name": "Western Dress",
-      "brand": "Modern Chic",
-      "price": 3200,
-      "image": "/dress.png",
-      "rating": 4.8,
-      "reviews": 30,
-      "discount": "30%",
-      "category": "Women's Wear",
-      "description": "Chic western dress with modern design and comfortable fit.",
-      "specifications": {
-        "material": "Polyester",
-        "length": "Mid-Length",
+      {
+        "length": "Mid-Length"
+      },
+      {
         "washCare": "Hand wash only"
+      }
+    ],
+    "availableSizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "availableColors": [
+      "Red",
+      "Black",
+      "Teal"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Hooded Jacket",
+    "brand": "Winter Comfort",
+    "price": 2400,
+    "image": "/jacket.png",
+    "rating": 4.5,
+    "reviews": 18,
+    "discount": "20%",
+    "stock": 10,
+    "category": "Men's Wear",
+    "description": "Warm and comfortable hooded jacket for winter days.",
+    "specifications": [
+      {
+        "material": "Fleece"
       },
-      "availableSizes": ["S", "M", "L"],
-      "availableColors": ["Red", "Black", "Teal"]
-    },
-    {
-      "id": 10,
-      "name": "Hooded Jacket",
-      "brand": "Winter Comfort",
-      "price": 2400,
-      "image": "/jacket.png",
-      "rating": 4.5,
-      "reviews": 18,
-      "discount": "20%",
-      "category": "Men's Wear",
-      "description": "Warm and comfortable hooded jacket for winter days.",
-      "specifications": {
-        "material": "Fleece",
-        "sleeves": "Full Sleeves",
+      {
+        "sleeves": "Full Sleeves"
+      },
+      {
         "washCare": "Machine wash"
-      },
-      "availableSizes": ["M", "L", "XL", "XXL"],
-      "availableColors": ["Black", "Gray", "Olive Green"]
-    }
-  ]
-  
+      }
+    ],
+    "availableSizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Black",
+      "Gray",
+      "Olive Green"
+    ]
+  }
+]

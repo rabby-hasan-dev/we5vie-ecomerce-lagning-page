@@ -1,6 +1,7 @@
+import { TDiscussion } from "@/types";
 
 
-const ProductDiscussion = ({ discussions }) => {
+const ProductDiscussion = ({ discussions }: { discussions: TDiscussion[] }) => {
     return (
         <div className="p-6 border-t border-gray-200 space-y-6">
             <h2 className="text-lg font-semibold text-gray-800">Product Discussions</h2>

@@ -32,7 +32,7 @@ const Navbar = () => {
                         <Link href="/" className="text-[#646464] font-semibold hover:text-[#581FC1] ">Home</Link>
                         <Link href="/#shop" className="text-[#646464] font-semibold hover:text-[#581FC1] ">Shop</Link>
                         <Link href="/#deals" className="text-[#646464] font-semibold hover:text-[#581FC1] ">Deals</Link>
-                        <Link href="/#new" className="text-[#646464] font-semibold hover:text-[#581FC1] ">What's New</Link>
+                        <Link href="/#new" className="text-[#646464] font-semibold hover:text-[#581FC1] "> What<span>'</span>s New</Link>
                     </nav>
 
                     {/* Right Section */}

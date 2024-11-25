@@ -21,7 +21,7 @@ const ReviewCard = () => {
                             3 days ago
                         </time>
                     </div>
-                    <Rating />
+                    <Rating rating={4} />
                 </div>
             </header>
 
