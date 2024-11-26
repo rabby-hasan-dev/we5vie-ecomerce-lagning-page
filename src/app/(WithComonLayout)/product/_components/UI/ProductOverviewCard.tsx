@@ -32,11 +32,13 @@ const ProductOverviewCard = () => {
 
                     <div className="flex justify-around items-center space-x-2">
                         <label className="flex items-center space-x-2 cursor-pointer">
+
                             <input
                                 type="radio"
                                 name="color"
-                                className="w-5 h-5 border-2 border-purple-600 rounded-full text-purple-600 focus:ring-2 focus:ring-purple-600 focus:outline-none"
+                                className="w-5 h-5 border cursor-pointer hover:border-purple-600 rounded-full accent-black"
                             />
+
                             <span className="text-lg font-medium text-gray-700 hover:text-purple-600 transition-colors">
                                 Off White
                             </span>
@@ -45,12 +47,14 @@ const ProductOverviewCard = () => {
                             <input
                                 type="radio"
                                 name="color"
-                                className="w-5 h-5 border-2 border-purple-600 rounded-full text-purple-600 focus:ring-2 focus:ring-purple-600 focus:outline-none"
+                                className="w-5 h-5 border cursor-pointer hover:border-purple-600 rounded-full accent-black"
                             />
                             <span className="text-lg font-medium text-gray-700 hover:text-purple-600 transition-colors">
                                 Black
                             </span>
                         </label>
+
+
                     </div>
                 </article>
             </section>

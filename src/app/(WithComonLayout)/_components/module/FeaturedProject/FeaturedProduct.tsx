@@ -65,7 +65,7 @@ const FeaturedProduct = () => {
                 </main>
 
                 <div className="text-center mt-6">
-                    <button className="font-semibold px-6 py-2 bg-purple-600 rounded-lg text-white" >See more</button>
+                    <button className="font-semibold px-6 py-2 bg-[#7E53D4]  rounded-lg text-white" >See more</button>
                 </div>
 
             </Container>

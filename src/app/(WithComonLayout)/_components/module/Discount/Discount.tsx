@@ -19,7 +19,9 @@ const Discount = () => {
                                 Off for New Customers
                             </h2>
                         </div>
-                        <ButtonComponet>Shop Now</ButtonComponet>
+                        <div className="flex justify-center">
+                            <ButtonComponet>Shop Now</ButtonComponet>
+                        </div>
                     </div>
 
                     <div>

@@ -35,7 +35,7 @@ const Dropdown = ({ buttonLabel = "Select Option", options = [] }: TDropdwonProp
                             <li key={index}>
                                 <Link
                                     href="#"
-                                    className="block px-4 py-2 bg-gray-200 text-black hover:text-white hover:bg-purple-600 "
+                                    className="block px-4 py-2 bg-white text-black hover:text-white hover:bg-purple-600 "
                                 >
                                     {option}
                                 </Link>

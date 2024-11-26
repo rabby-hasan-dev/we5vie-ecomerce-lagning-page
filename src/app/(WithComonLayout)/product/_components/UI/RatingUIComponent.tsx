@@ -2,7 +2,7 @@ import React from 'react';
 
 const RatingUIComponent = () => {
     return (
-        <div className="max-w-sm mx-auto bg-gray-100 p-6 font-sans">
+        <div className="max-w-sm mx-auto  p-6 font-sans">
             <div className='flex justify-between items-center'>
                 <h3 className="text-black font-semibold ">Product Review</h3>
                 <p className='text-purple-600 font-semibold '>121 reviews</p>
