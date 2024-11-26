@@ -1,30 +1,16 @@
 'use client'
 import SlideButton from "@/Components/Button/SlideButton";
+import Alert from "@/Components/UI/Alert";
 
 import Container from "@/Components/UI/Container";
 import HeadingComponent from "@/Components/UI/HeadingComponent";
 import ProductCard from "@/Components/UI/ProductCard";
+import Spinner from "@/Components/UI/Spiner";
+import { useProducts } from "@/hooks/useProducts.hook";
 import { TProduct } from "@/types";
-import { useEffect, useState } from "react";
-
 
 const BigdealSection = () => {
-
-    const [products, setProducts] = useState([]);
-
-    console.log(products);
-
-    // Fetch data on component mount
-    useEffect(() => {
-        const fetchData = async () => {
-            const response = await fetch("/product.json");
-            const data = await response.json();
-            setProducts(data);
-        };
-
-        fetchData();
-    }, []);
-
+    const { products, isLoading, error } = useProducts()
 
     return (
         <div className="">
@@ -35,13 +21,25 @@ const BigdealSection = () => {
                     <SlideButton />
                 </div>
                 {/* main content */}
-                <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-6">
+                <main>
+                    {/* Handle loading, error, and empty states */}
+                    {isLoading ? (
+                        <div className="flex justify-center items-center">
+                            <Spinner />
+                        </div>
+                    ) : error ? (
+                        <Alert message="Something Went Wrong" type="error" />
+                    ) : products.length === 0 ? (
 
-                    {
-                        products.map((product: TProduct) => (<ProductCard key={product.id} product={product} />))
-                    }
-
-                </div>
+                        <Alert message="No products available." type="info" />
+                    ) : (
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+                            {
+                                products.slice(0, 8)?.map((product: TProduct) => (<ProductCard key={product.id} product={product} />))
+                            }
+                        </div>
+                    )}
+                </main>
 
                 <div className="text-center mt-6">
                     <button className="font-semibold px-6 py-2 bg-purple-600 rounded-lg text-white" >See more</button>
