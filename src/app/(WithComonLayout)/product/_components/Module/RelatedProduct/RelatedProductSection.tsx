@@ -5,15 +5,42 @@ import Alert from '@/Components/UI/Alert';
 import FeaturedProductCard from '@/Components/UI/FeaturedProductCard';
 import HeadingComponent from '@/Components/UI/HeadingComponent';
 import Spinner from '@/Components/UI/Spiner';
-import { usePagination } from '@/hooks/usePaginate';
 import { useProducts } from '@/hooks/useProducts.hook';
+import useResponsivePagination from '@/hooks/useResponsivePagination';
 import { TProduct } from '@/types';
-import React from 'react';
+import React, { useMemo } from 'react';
 
 const RelatedProductSection = () => {
     const { products, isLoading, error } = useProducts()
-    const { paginatedItems: paginatedProducts, currentPage, totalPages, handlePageChange } =
-        usePagination<TProduct>(products, 4);
+    const { currentPage, paginatedItems: paginatedProducts, handlePageChange, totalPages }
+        = useResponsivePagination(products, 4)
+
+    const renderContent = useMemo(() => {
+        // Handle loading, error, and empty states
+        if (isLoading) {
+            return (
+                <div className="flex justify-center items-center">
+                    <Spinner />
+                </div>
+            );
+        }
+
+        if (error) {
+            return <Alert message="Something Went Wrong" type="error" />;
+        }
+
+        if (products.length === 0) {
+            return <Alert message="No products available." type="info" />;
+        }
+
+        return (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+                {paginatedProducts?.map((product: TProduct) => (
+                    <FeaturedProductCard key={product.id} product={product} />
+                ))}
+            </div>
+        );
+    }, [isLoading, error, products, paginatedProducts]);
 
 
     return (
@@ -31,23 +58,7 @@ const RelatedProductSection = () => {
 
             {/* main content */}
             <main>
-                {/* Handle loading, error, and empty states */}
-                {isLoading ? (
-                    <div className="flex justify-center items-center">
-                        <Spinner />
-                    </div>
-                ) : error ? (
-                    <Alert message="Something Went Wrong" type="error" />
-                ) : products.length === 0 ? (
-
-                    <Alert message="No products available." type="info" />
-                ) : (
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
-                        {
-                            paginatedProducts?.map((product: TProduct) => (<FeaturedProductCard key={product.id} product={product} />))
-                        }
-                    </div>
-                )}
+                {renderContent}
             </main>
 
             <div className="text-center mt-6">

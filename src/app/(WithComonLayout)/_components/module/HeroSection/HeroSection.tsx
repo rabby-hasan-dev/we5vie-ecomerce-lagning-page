@@ -8,7 +8,7 @@ import { ExchangeIcon, PaymentIcon, TruckDeliveryIcon } from '@/assets/icons';
 
 const HeroSection = () => {
     return (
-        <div className="relative bg-[url('/hero.png')] lg:bg-no-repeat lg:bg-cover flex justify-center items-center h-[600px] mb-5">
+        <div className="relative bg-[url('/hero.png')] lg:bg-no-repeat lg:bg-cover flex justify-center items-center h-[600px] mb-[46px] ">
             <div className="absolute inset-0 bg-black/30 z-10" /> {/* Semi-transparent overlay */}
 
             <Container>
@@ -29,7 +29,7 @@ const HeroSection = () => {
 
             <div className="absolute bottom-0 left-0 w-full bg-[url('/option.png')] bg-no-repeat bg-cover rounded-t-lg">
                 {/* Overlay for better text visibility */}
-                <div className="absolute inset-0 bg-[#6441C2]/90 z-10" />
+                <div className="absolute inset-0 bg-[#6441C2E5] z-10 shadow-[#9F9F9F1A] " />
 
                 {/* Content Section */}
                 <div className="relative z-20 max-w-screen-xl mx-auto flex flex-col md:flex-row justify-start lg:justify-between items-center gap-8 py-6 lg:px-4 text-white">

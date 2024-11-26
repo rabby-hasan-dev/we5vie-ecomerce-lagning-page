@@ -10,7 +10,7 @@ import FeaturedProduct from "./_components/module/FeaturedProject/FeaturedProduc
 
 export default function Home() {
   return (
-    <div className="space-y-[75px] bg-[#FFFFFF] " >
+    <div className="bg-[#FFFFFF] " >
 
       <HeroSection />
       <FeaturedProduct />

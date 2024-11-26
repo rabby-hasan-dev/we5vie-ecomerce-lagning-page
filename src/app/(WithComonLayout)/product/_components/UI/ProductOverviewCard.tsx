@@ -8,9 +8,9 @@ const ProductOverviewCard = () => {
             <header className="product-header space-y-6 ">
                 <button className="product-tag bg-purple-950 py-[9.5px] px-14 text-white font-semibold rounded-lg">New Arrival</button>
                 <h3 className="product-title font-semibold text-[33px] ">White Hoodie</h3>
-                <div className="product-rating">
-                    <span> <Rating rating={4} /> (4.0) </span>
-                    <span className="product-reviews text-purple-600 font-medium"> 121 reviews</span>
+                <div className="product-rating flex items-center">
+                    <div className='flex items-center'> <Rating rating={4} /> <p>(4.0)</p> </div>
+                    <span className="product-reviews ml-4 text-purple-600 font-medium"> 121 reviews</span>
                 </div>
                 <h4 className="product-price text-[28px] uppercase font-bold ">bdt 2500</h4>
             </header>

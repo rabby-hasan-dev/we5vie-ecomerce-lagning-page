@@ -30,21 +30,23 @@ const CollectionSlide = () => {
 
     return (
 
-        <Container>
-            <AnimateSlider
-                slides={slidesData.map((slide: ISlide, index) => (
-                    <SlideContent
-                        key={index}
-                        imageSrc={slide.image}
-                        title={slide.title}
-                        description={slide.description}
-                        buttonText={slide.buttonText}
-                    />
-                ))}
-            />
+        <section className="mb-20 ">
+            <Container>
+                <AnimateSlider
+                    slides={slidesData.map((slide: ISlide, index) => (
+                        <SlideContent
+                            key={index}
+                            imageSrc={slide.image}
+                            title={slide.title}
+                            description={slide.description}
+                            buttonText={slide.buttonText}
+                        />
+                    ))}
+                />
 
 
-        </Container>
+            </Container>
+        </section>
 
     );
 };
