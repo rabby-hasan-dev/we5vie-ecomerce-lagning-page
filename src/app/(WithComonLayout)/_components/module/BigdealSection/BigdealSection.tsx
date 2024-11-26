@@ -6,11 +6,15 @@ import Container from "@/Components/UI/Container";
 import HeadingComponent from "@/Components/UI/HeadingComponent";
 import ProductCard from "@/Components/UI/ProductCard";
 import Spinner from "@/Components/UI/Spiner";
+import { usePagination } from "@/hooks/usePaginate";
 import { useProducts } from "@/hooks/useProducts.hook";
 import { TProduct } from "@/types";
 
 const BigdealSection = () => {
     const { products, isLoading, error } = useProducts()
+    const { paginatedItems: paginatedProducts, currentPage, totalPages, handlePageChange } =
+        usePagination<TProduct>(products, 8);
+
 
     return (
         <div className="">
@@ -18,7 +22,12 @@ const BigdealSection = () => {
                 {/* header part */}
                 <div className="flex justify-between items-center">
                     <HeadingComponent heading="Big Deal" subHeading="summer" />
-                    <SlideButton />
+                    <SlideButton
+                        onPrev={() => handlePageChange('prev')}
+                        onNext={() => handlePageChange('next')}
+                        disablePrev={currentPage === 1}
+                        disableNext={currentPage === totalPages}
+                    />
                 </div>
                 {/* main content */}
                 <main>
@@ -35,7 +44,7 @@ const BigdealSection = () => {
                     ) : (
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
                             {
-                                products.slice(0, 8)?.map((product: TProduct) => (<ProductCard key={product.id} product={product} />))
+                                paginatedProducts?.map((product: TProduct) => (<ProductCard key={product.id} product={product} />))
                             }
                         </div>
                     )}
