@@ -22,7 +22,7 @@ const ProductDetailsPage = () => {
                     < Breadcrumb />
                 </header>
 
-                <main className="lg:flex space-y-6 lg:space-y-0 space-x-6 mt-6">
+                <main className="lg:flex space-y-6 lg:space-y-0 lg:space-x-6 lg:mt-6">
                     <div className="lg:w-1/2">
                         <ProductSlider />
                     </div>
@@ -31,11 +31,11 @@ const ProductDetailsPage = () => {
                     </div>
                 </main>
 
-                <main>
+                <main className="mt-6 ">
                     < ProductInfoSection />
                 </main>
                 {/* Related product */}
-                <main className="my-20">
+                <main className="mt-[50px] mb-[63px] ">
                     <RelatedProductSection />
                 </main>
             </div>

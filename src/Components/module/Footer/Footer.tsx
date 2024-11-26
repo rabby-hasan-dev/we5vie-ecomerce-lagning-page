@@ -35,7 +35,7 @@ const Footer = () => {
                                 <input
                                     type="email"
                                     placeholder="Your email address"
-                                    className="w-full outline-none bg-transparent pl-4 text-sm"
+                                    className="w-full outline-none rounded-l-lg text-black bg-[#F4F8FF] p-4 "
                                 />
                                 <button
                                     type="button"

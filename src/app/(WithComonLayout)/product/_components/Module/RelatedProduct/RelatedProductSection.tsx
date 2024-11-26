@@ -46,7 +46,7 @@ const RelatedProductSection = () => {
     return (
         <section>
             {/* header part */}
-            <header className="flex justify-between items-center">
+            <header className="flex  justify-between items-center">
                 <HeadingComponent heading="Related Products" subHeading="" />
                 <SlideButton
                     onPrev={() => handlePageChange('prev')}

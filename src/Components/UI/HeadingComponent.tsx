@@ -7,8 +7,8 @@ type THeadingProps = {
 const HeadingComponent = ({ heading, subHeading }: THeadingProps) => {
     return (
         <div className="space-y-1">
-            <p className="text-lg text-purple-600 uppercase ">{subHeading} </p>
-            <h1 className="text-4xl font-bold text-black">{heading} </h1>
+            <p className="lg:text-lg text-purple-600 uppercase ">{subHeading} </p>
+            <h1 className="lg:text-4xl text-[28px] font-bold text-black">{heading} </h1>
         </div>
     );
 };

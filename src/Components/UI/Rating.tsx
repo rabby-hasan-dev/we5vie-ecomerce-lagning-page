@@ -5,7 +5,7 @@ const Rating = ({ rating }: { rating: number }) => {
 
 
     return (
-        <div className="flex justify-center space-x-1.5">
+        <div className="flex justify-start space-x-1.5">
             {[...Array(totalStars)].map((_, index) => (
                 <svg
                     key={index}

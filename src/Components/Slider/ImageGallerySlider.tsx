@@ -29,7 +29,12 @@ const ImageGallerySlider = ({ slides }: { slides: string[] }) => {
                     </div>
                 ))}
             </div>
-
+            {/* Page Number */}
+            <div className="relative w-full  lg:hidden  ">
+                <div className="absolute bottom-4  right-1 transform -translate-x-1/2 bg-[#E0DCF8] px-4 py-2 text-[13px] text-black font-semibold rounded-[25px] shadow-md">
+                    <span>{current + 1}</span> / <span>{slides.length}</span>
+                </div>
+            </div>
             {/* Navigation Buttons */}
             <button
                 aria-label="Previous slide"
@@ -47,8 +52,10 @@ const ImageGallerySlider = ({ slides }: { slides: string[] }) => {
                 <ArrowLeftIcon className="text-purple-600 hover:text-white" />
             </button>
 
+
+
             {/* Thumbnail Navigation */}
-            <div className="flex justify-center mt-4 space-x-4 overflow-y-auto">
+            <div className="hidden  lg:flex   justify-center mt-4 space-x-4 overflow-y-auto">
                 {slides.map((src, idx) => (
                     <div
                         key={idx}
@@ -66,6 +73,8 @@ const ImageGallerySlider = ({ slides }: { slides: string[] }) => {
                     </div>
                 ))}
             </div>
+
+
         </div>
     );
 };
