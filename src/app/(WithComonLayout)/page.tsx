@@ -2,8 +2,9 @@
 import CollectionSlide from "./_components/module/Collection/CollectionSlide";
 import Discount from "./_components/module/Discount/Discount";
 import HeroSection from "./_components/module/HeroSection/HeroSection";
-import FeaturedProject from "./_components/module/FeaturedProject/FeaturedProject";
+
 import BigdealSection from "./_components/module/BigdealSection/BigdealSection";
+import FeaturedProduct from "./_components/module/FeaturedProject/FeaturedProduct";
 
 
 
@@ -12,7 +13,7 @@ export default function Home() {
     <div className="space-y-[75px] bg-[#FFFFFF] " >
 
       <HeroSection />
-      <FeaturedProject />
+      <FeaturedProduct />
       <Discount />
       <CollectionSlide />
       <BigdealSection />

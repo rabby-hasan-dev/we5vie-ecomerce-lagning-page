@@ -16,7 +16,7 @@ const ProductSlider = () => {
         "/heroman.png",
         "/heroman.png",
         "/heroman.png",
-        "/man.png",
+        "/heroman.png",
     ];
 
     return (

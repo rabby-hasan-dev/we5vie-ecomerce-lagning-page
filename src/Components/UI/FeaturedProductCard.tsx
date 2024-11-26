@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import AddToCart from '../Button/AddToCart';
 import Link from 'next/link';
+import { TProduct } from '@/types';
 
 
-const FeaturedProductCard = () => {
+const FeaturedProductCard = ({ product }: { product: TProduct }) => {
+    const { image, name, price, } = product
     return (
         <>
             <Link href={`/product/:1`}>
@@ -12,7 +14,7 @@ const FeaturedProductCard = () => {
                     <div className="relative h-[252px] rounded-lg m-2 ">
                         <Image
                             alt="Mountains"
-                            src='/man.png'
+                            src={image}
                             fill
                             sizes="(min-width: 808px) 50vw, 100vw"
                             style={{
@@ -23,15 +25,14 @@ const FeaturedProductCard = () => {
                         />
                         {/* Discount Badge */}
 
-
                     </div>
 
                     {/* Content Section */}
                     <div className="p-2">
                         {/* Product Info */}
                         <div className="flex justify-between items-center mb-3">
-                            <h3 className="text-lg">Indian Sharee</h3>
-                            <p className="text-xl font-bold text-black">BDT 2,300</p>
+                            <h3 className="text-lg">{name} </h3>
+                            <p className="text-xl font-bold uppercase text-black">{price} </p>
                         </div>
 
                         {/* Add to Cart Button */}
